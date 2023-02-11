@@ -30,15 +30,15 @@ To use the DataVisualizationTool, you will need to create an instance of the cla
 Here is an example of how you can use the class to generate a histogram:
 
 Assuming you have the csv file named data.csv, you can run the tool as follows:
-
-import pandas as pd
-from DataVisualizationTool import DataVisualizationTool
-
-data = pd.read_csv('data.csv')
-dvt = DataVisualizationTool(data)
-
-dvt.plot('histogram', ['column_1', 'column_2'], title='Histogram Plot', xlabel='Column Names', ylabel='Frequency')
-
+    
+    import pandas as pd
+    from DataVisualizationTool import DataVisualizationTool
+    
+    data = pd.read_csv('data.csv')
+    dvt = DataVisualizationTool(data)
+    
+    # Call the plot function and specify the plot type, column names, and any optional arguments. 
+    dvt.plot('histogram', ['column_1', 'column_2'], title='Histogram Plot', xlabel='Column Names', ylabel='Frequency')
 
 Replace 'histogram', ['column_1', 'column_2'], 'Histogram Plot', 'Column Names', and 'Frequency' with the desired plot type, column names, title, xlabel, and ylabel for your visualization.
 
